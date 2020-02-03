@@ -1,0 +1,42 @@
+﻿@model CHE_MVC_0._0.Models.GUIClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details - Class Heirarchy Editor</h2>
+
+<div>
+    <h4>Class detailes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isAbstract)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isAbstract)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

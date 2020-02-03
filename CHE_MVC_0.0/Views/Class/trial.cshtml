@@ -1,0 +1,27 @@
+﻿@model CHE_MVC_0._0.Models.ErrorHandling
+
+@{
+    ViewBag.Title = "Class Is Parent";
+}
+
+<h2>Oops!</h2>
+<hr />
+@ViewBag.errorNo
+
+
+@{
+    var errorNo = Model.ErrorNo;
+    var target = Model.TargetClassName;
+}
+
+
+
+@if (errorNo == 1) // is parent class
+{
+    
+
+    <div id="errorMessage" class="alert alert-danger" role="alert">
+        <h3><b>Class: <i>@target</i></b></h3>
+        This class  is a parent class. Please remove all its children before edinting or removing it.
+    </div>
+}

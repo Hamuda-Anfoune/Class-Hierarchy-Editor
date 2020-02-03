@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GUIClassModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GUIClass">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="isAbstract" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="hmaha1DBContextGUI" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GUIClasses" EntityType="GUIClassModel.GUIClass" />
+  </EntityContainer>
+</Schema>

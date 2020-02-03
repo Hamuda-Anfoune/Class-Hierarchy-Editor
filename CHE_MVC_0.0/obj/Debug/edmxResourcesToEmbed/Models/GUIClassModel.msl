@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GUIClassModelStoreContainer" CdmEntityContainer="hmaha1DBContextGUI">
+    <EntitySetMapping Name="GUIClasses">
+      <EntityTypeMapping TypeName="GUIClassModel.GUIClass">
+        <MappingFragment StoreEntitySet="wt_cw3_class">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="isAbstract" ColumnName="isAbstract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
